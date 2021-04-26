@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../DesafioCodexBackend/.idea/DesafioCodexBackend.iml" filepath="$PROJECT_DIR$/../DesafioCodexBackend/.idea/DesafioCodexBackend.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/desafio-codex-frontend.iml" filepath="$PROJECT_DIR$/.idea/desafio-codex-frontend.iml" />
     </modules>
   </component>

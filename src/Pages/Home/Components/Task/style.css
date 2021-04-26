@@ -1,0 +1,31 @@
+.task {
+    padding: 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-actions {
+    font-size: 25px;
+}
+
+.task-icons {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.task span {
+    color: white;
+    font-size: 24px;
+}
+
+.task-highPriority {
+    background-color: crimson;
+}
+
+.task-lowPriority {
+    background-color: #0cc15e;
+}

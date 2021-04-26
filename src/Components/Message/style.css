@@ -1,0 +1,25 @@
+.message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 100000000;
+}
+
+.message-text {
+    font-size: 24px;
+}
+
+.message-error {
+    background-color: crimson;
+}
+
+.message-success {
+    background-color: #0cc15e;
+}
+
+.message-alert {
+    background-color: #cdcd4c;
+}

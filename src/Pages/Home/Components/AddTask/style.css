@@ -1,0 +1,61 @@
+.addTaskMask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.addTask {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.addTask-title {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.addTask-inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.addTask-label {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.addTask-input {
+    padding: 5px;
+}
+
+.addTask-button {
+    background-color: #0cc15e;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.addTask-close {
+    color: crimson;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}

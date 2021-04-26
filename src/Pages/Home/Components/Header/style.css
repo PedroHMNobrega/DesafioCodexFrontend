@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.header-userName {
+    margin-right: 20px;
+}
+
+.header-logout {
+    size: 30px;
+    cursor: pointer;
+}
