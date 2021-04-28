@@ -47,11 +47,9 @@ function TaskList() {
             <div className={'taskList'}>
                 <div className={'taskList-header'}>
                     <h1 className={'taskList-title'}>Tarefas</h1>
-                    <div className={'taskList-addTask'}>
-                        <a onClick={handleAddTask}>
-                            <FontAwesomeIcon icon={faPlus} />
-                        </a>
-                    </div>
+                    <a onClick={handleAddTask} className={'taskList-addTask'}>
+                        <FontAwesomeIcon icon={faPlus} />
+                    </a>
                 </div>
                 <div className={'taskList-list'}>
                     <div className={'taskList-labels ' + showLabel()}>
