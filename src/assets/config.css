@@ -5,11 +5,15 @@
     --blue: #252169;
     --bold: 500;
     --thin: 300;
-    --font-family: 'Roboto', sans-serif;
+    --font: 'Ubuntu', sans-serif;
 }
 
 html, body {
     background-color: var(--background);
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#root {
+    height: 100%;
 }

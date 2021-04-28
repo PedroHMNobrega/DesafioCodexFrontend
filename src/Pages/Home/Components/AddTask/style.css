@@ -1,5 +1,5 @@
 .addTaskMask {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
@@ -15,14 +15,15 @@
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .addTask-title {
     color: black;
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+    margin-top: 5px;
     margin-bottom: 20px;
 }
 
@@ -39,16 +40,18 @@
 
 .addTask-input {
     padding: 5px;
+    height: 40px;
 }
 
 .addTask-button {
-    background-color: #0cc15e;
+    background-color: var(--background);
     color: white;
     border-radius: 10px;
     border: none;
-    padding: 5px 10px;
+    padding: 8px 15px;
     display: block;
     margin: 0 auto;
+    text-transform: uppercase;
 }
 
 .addTask-close {

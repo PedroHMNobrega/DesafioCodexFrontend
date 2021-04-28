@@ -1,4 +1,17 @@
 .inputField {
     margin: 10px 0;
     padding: 10px;
+    padding-left: 40px;
+    background-color: var(--background);
+    color: white;
+    border: 1px solid white;
+    font-family: var(--font);
+    border-radius: 5px;
+}
+
+::placeholder {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: white;
+    opacity: 1;
 }

@@ -1,16 +1,45 @@
 .header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-right: 20px;
+    padding: 0 50px;
 }
 
 .header-userName {
     margin-right: 20px;
 }
 
+.header-logoutContainer {
+    display: flex;
+    align-items: center;
+    font-family: var(--font);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .header-logout {
     size: 30px;
-    cursor: pointer;
+    margin-left: 10px;
+}
+
+.header-logo {
+    width: 300px;
+    height: 100px;
+    background-image: url("../../../../assets/images/logo.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header-logo {
+        width: 200px;
+        height: 100px;
+        margin-top: 0;
+    }
 }

@@ -31,15 +31,16 @@ function Task({task, listTasks}) {
     }
 
     return (
-        <div className={'task ' + getStyle()} id={id}>
+        <div className={'task '} id={id}>
             {showEditTask && <EditTask task={task} setShowEditTask={setShowEditTask} listTasks={listTasks} />}
+            <div className={'task-priority ' + getStyle()}>{priority}</div>
             <span>{name}</span>
             <div className={'task-actions'}>
                 <a onClick={handleEdit}>
-                    <FontAwesomeIcon icon={faPenAlt} className={'task-icons'}/>
+                    <FontAwesomeIcon icon={faPenAlt} className={'task-icons task-icons-pen'}/>
                 </a>
                 <a onClick={handleDelete}>
-                    <FontAwesomeIcon icon={faTrashAlt} className={'task-icons'}/>
+                    <FontAwesomeIcon icon={faTrashAlt} className={'task-icons task-icons-trash'}/>
                 </a>
             </div>
         </div>

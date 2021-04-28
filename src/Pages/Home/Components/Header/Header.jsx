@@ -15,7 +15,9 @@ function Header() {
 
     return (
         <div className={'header'}>
-            <a onClick={handleLogoutClick}>
+            <div className={'header-logo'} />
+            <a onClick={handleLogoutClick} className={'header-logoutContainer'}>
+                <h2>Sair</h2>
                 <FontAwesomeIcon icon={faSignOutAlt} size={'2x'} className={'header-logout'} />
             </a>
         </div>

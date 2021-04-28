@@ -1,15 +1,35 @@
 .taskList {
     margin: 0 auto;
-    padding: 20px 50px;
+    padding: 20px 0 0 0;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 10px;
     max-width: 600px;
+}
+
+.taskList-labels {
+    color: #a7a7a7;
+    display: flex;
+    font-weight: 300;
+    padding: 0 30px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.taskList-label2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(calc(-50% - 10px));
 }
 
 .taskList-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 30px;
+}
+
+.taskList-hide {
+    display: none;
 }
 
 .taskList-addTask {
@@ -34,4 +54,5 @@
     color: black;
     text-align: center;
     margin-top: 0;
+    font-weight: bold;
 }

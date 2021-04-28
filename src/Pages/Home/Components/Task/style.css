@@ -1,11 +1,10 @@
 .task {
-    padding: 20px;
-    margin: 5px 0;
-    border-radius: 10px;
+    padding: 20px 40px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid #a7a7a7;
 }
 
 .task-actions {
@@ -15,10 +14,18 @@
 .task-icons {
     margin-left: 10px;
     cursor: pointer;
+    color: black;
+}
+
+.task-priority {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 300;
 }
 
 .task span {
-    color: white;
+    color: black;
     font-size: 24px;
 }
 
@@ -28,4 +35,22 @@
 
 .task-lowPriority {
     background-color: #0cc15e;
+}
+
+.task-icons-pen {
+    color: var(--background);
+}
+
+.task-icons-trash {
+    color: crimson;
+}
+
+@media screen and (max-width: 400px) {
+    .task-icons {
+        margin-left: 0;
+        display: flex;
+    }
+    .task-icons-pen {
+        margin-bottom: 9px;
+    }
 }

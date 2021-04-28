@@ -32,6 +32,15 @@ function TaskList() {
         setShowAddTask(true);
     }
 
+    function showLabel() {
+        console.log(tasks.length)
+        if(tasks.length === 0) {
+            return "taskList-hide";
+        } else {
+            return "";
+        }
+    }
+
     return (
         <>
             {showAddTask && <AddTask setShowAddTask={setShowAddTask} listTasks={listTasks} />}
@@ -45,6 +54,10 @@ function TaskList() {
                     </div>
                 </div>
                 <div className={'taskList-list'}>
+                    <div className={'taskList-labels ' + showLabel()}>
+                        <h2 className={'taskList-label1'}>Prioridade</h2>
+                        <h2 className={'taskList-label2'}>Tarefa</h2>
+                    </div>
                     {tasks.map(task => {
                         return (
                             <Task task={task} listTasks={listTasks} key={task._id}/>

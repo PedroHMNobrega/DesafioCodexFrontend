@@ -4,6 +4,8 @@ import {userApi} from "../../api/userApi.js";
 import {useHistory} from 'react-router-dom';
 import Message from "../../Components/Message";
 import InputField from "../../Components/InputField";
+import {faLock, faUser, faSignature} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 function Cadastro(props) {
     const [name, setName] = useState("");
@@ -28,26 +30,36 @@ function Cadastro(props) {
     return (
         <div className={'login'}>
             <Message message={error} setMessage={setError} type={'error'} />
+            <div className={'login-logo'} />
             <form className={'login-form'} onSubmit={cadastrar}>
-                <h2 className={'login-form-title'}>Cadastrar</h2>
-                <InputField
-                    type={'text'}
-                    placeholder={'Nome'}
-                    setValue={setName}
-                    value={name}
-                />
-                <InputField
-                    type={'email'}
-                    placeholder={'Email'}
-                    setValue={setEmail}
-                    value={email}
-                />
-                <InputField
-                    type={'password'}
-                    placeholder={'Senha'}
-                    setValue={setPassword}
-                    value={password}
-                />
+                <h2 className={'login-form-title'}>Fazer Cadastro</h2>
+                <div className={'login-inputContainer'}>
+                    <FontAwesomeIcon icon={faSignature} className={'login-inputIcon'}/>
+                    <InputField
+                        type={'text'}
+                        placeholder={'Nome'}
+                        setValue={setName}
+                        value={name}
+                    />
+                </div>
+                <div className={'login-inputContainer'}>
+                    <FontAwesomeIcon icon={faUser} className={'login-inputIcon'}/>
+                    <InputField
+                        type={'email'}
+                        placeholder={'Email'}
+                        setValue={setEmail}
+                        value={email}
+                    />
+                </div>
+                <div className={'login-inputContainer'}>
+                    <FontAwesomeIcon icon={faLock} className={'login-inputIcon'}/>
+                    <InputField
+                        type={'password'}
+                        placeholder={'Senha'}
+                        setValue={setPassword}
+                        value={password}
+                    />
+                </div>
                 <input type="submit" className={'login-submit login-form-input'} value={"Cadastrar"} />
             </form>
         </div>
